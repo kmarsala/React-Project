@@ -1,16 +1,18 @@
 import React from 'react';
 import { Layout } from 'antd';
+import MyHeader from './components/Layout/Header';
+import SideBar from './components/Layout/SideBar';
 import './App.less';
 
-const { Header, Sider, Content } = Layout;
+const { Content } = Layout;
 
 function App() {
   return (
     <div className="App">
       <Layout>
-        <Header>My Application</Header>
+        <MyHeader />
         <Layout>
-          <Sider collapsible>Sider</Sider>
+          <SideBar />
           <Content>Content</Content>
         </Layout>
       </Layout>
