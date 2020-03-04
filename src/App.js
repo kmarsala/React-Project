@@ -2,9 +2,8 @@ import React from 'react';
 import { Layout } from 'antd';
 import MyHeader from './components/Layout/Header';
 import SideBar from './components/Layout/SideBar';
+import MainContent from './components/Layout/MainContent';
 import './App.less';
-
-const { Content } = Layout;
 
 function App() {
   return (
@@ -13,7 +12,7 @@ function App() {
         <MyHeader />
         <Layout>
           <SideBar />
-          <Content>Content</Content>
+          <MainContent />
         </Layout>
       </Layout>
     </div>
