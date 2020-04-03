@@ -1,8 +1,7 @@
 import React from 'react';
 import { Layout } from 'antd';
-import MyHeader from './components/Layout/Header';
-import SideBar from './components/Layout/SideBar';
-import MainContent from './components/Layout/MainContent';
+import MyHeader from './components/MyHeader';
+import MainContent from './components/MainContent';
 import './App.less';
 
 function App() {
@@ -10,10 +9,7 @@ function App() {
     <div className="App">
       <Layout>
         <MyHeader />
-        <Layout>
-          <SideBar />
-          <MainContent />
-        </Layout>
+        <MainContent />
       </Layout>
     </div>
   );
